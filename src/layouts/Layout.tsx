@@ -1,6 +1,10 @@
+import Sidebar from "../components/Sidebar";
 
-export default function layout() {
-  return (
-    <div>layout</div>
-  )
+export default function Layout() {
+    return (
+        <>
+            <Sidebar />
+
+        </>
+    )
 }

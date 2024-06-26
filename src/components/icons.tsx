@@ -1,45 +1,50 @@
-import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import type { iconsData } from '../types';
 
-const Icons = ({ person }) => {
-    let iconsData = [];
+type IconsProps = {
+    person: string
+}
 
-    if (person === 'Carlos') {
-        iconsData = [
-            {
-                name: 'LinkedIn',
-                url: 'https://www.linkedin.com/in/carlos-mart%C3%ADnez-mart%C3%ADnez-967135239/',
-                icon: <FaLinkedin className="h-8 w-8" />,
-                alt: 'LinkedIn',
-            },
-            {
-                name: 'GitHub',
-                url: 'https://github.com/Carloxxz',
-                icon: <FaGithub className="h-8 w-8" />,
-                alt: 'GitHub',
-            },
-        ];
-    } else if (person === 'Emmanuel') {
-        iconsData = [
-            {
-                name: 'LinkedIn',
-                url: 'https://www.linkedin.com/in/emmanuel-jr-4b20b5162/',
-                icon: <FaLinkedin className="h-8 w-8" />,
-                alt: 'LinkedIn',
-            },
-            {
-                name: 'GitHub',
-                url: 'https://github.com/BailonSSJ',
-                icon: <FaGithub className="h-8 w-8" />,
-                alt: 'GitHub',
-            },
-        ];
-    }
+const iconsData: iconsData = {
+    Carlos: [
+        {
+            name: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/carlos-mart%C3%ADnez-mart%C3%ADnez-967135239/',
+            icon: <FaLinkedin className="h-8 w-8" />,
+            alt: 'LinkedIn',
+        },
+        {
+            name: 'GitHub',
+            url: 'https://github.com/Carloxxz',
+            icon: <FaGithub className="h-8 w-8" />,
+            alt: 'GitHub',
+        }
+    ],
+    Emmanuel: [
+        {
+            name: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/emmanuel-jr-4b20b5162/',
+            icon: <FaLinkedin className="h-8 w-8" />,
+            alt: 'LinkedIn',
+        },
+        {
+            name: 'GitHub',
+            url: 'https://github.com/BailonSSJ',
+            icon: <FaGithub className="h-8 w-8" />,
+            alt: 'GitHub',
+        },
+    ]
+};
+
+
+const Icons = ({ person }: IconsProps) => {
+
+    const iconData = iconsData[person]
 
     return (
         <div className="flex justify-center gap-4 mt-4">
-            {iconsData.map((item, index) => (
-                <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.alt}>
+            {iconData.map(item => (
+                <a key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.alt}>
                     {item.icon}
                 </a>
             ))}

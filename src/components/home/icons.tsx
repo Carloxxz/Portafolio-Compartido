@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import type { iconsData } from '../types';
+import type { iconsData } from '../../types';
 
 type IconsProps = {
     person: string
@@ -10,13 +10,13 @@ const iconsData: iconsData = {
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/carlos-mart%C3%ADnez-mart%C3%ADnez-967135239/',
-            icon: <FaLinkedin className="h-8 w-8" />,
+            icon: <FaLinkedin className="h-8 w-8 hover:text-indigo-400 transition-colors" />,
             alt: 'LinkedIn',
         },
         {
             name: 'GitHub',
             url: 'https://github.com/Carloxxz',
-            icon: <FaGithub className="h-8 w-8" />,
+            icon: <FaGithub className="h-8 w-8 hover:text-indigo-400 transition-colors" />,
             alt: 'GitHub',
         }
     ],
@@ -24,13 +24,13 @@ const iconsData: iconsData = {
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/emmanuel-jr-4b20b5162/',
-            icon: <FaLinkedin className="h-8 w-8" />,
+            icon: <FaLinkedin className="h-8 w-8 hover:text-indigo-400 transition-colors" />,
             alt: 'LinkedIn',
         },
         {
             name: 'GitHub',
             url: 'https://github.com/BailonSSJ',
-            icon: <FaGithub className="h-8 w-8" />,
+            icon: <FaGithub className="h-8 w-8 hover:text-indigo-400 transition-colors" />,
             alt: 'GitHub',
         },
     ]

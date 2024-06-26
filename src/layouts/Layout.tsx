@@ -7,9 +7,11 @@ export default function Layout() {
 
             <Sidebar />
 
-            <main className="w-full ml-64">
-                <Outlet />
+            <main className="flex-1 sm:ml-0 md:ml-64 overflow-y-auto">
+                <div className="container mx-auto py-6">
+                    <Outlet />
+                </div>
             </main>
         </div>
-    )
+    );
 }

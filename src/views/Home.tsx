@@ -1,11 +1,10 @@
-import React from 'react';
 import Icons from '../components/icons';
 
 export default function Home() {
     return (
         <section>
             <div className="text-gray-300">
-                <div className="container mx-auto flex flex-col items-center my-12">
+                <div className="mx-auto flex flex-col items-center my-12">
                     <div className="text-center mb-10">
                         <h1 className="text-5xl text-indigo-400 mb-4">Bienvenidos</h1>
                         <h2 className="text-5xl mb-4">Conoce al Equipo</h2>

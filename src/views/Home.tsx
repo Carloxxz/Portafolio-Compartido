@@ -1,4 +1,5 @@
 import React from 'react';
+import Icons from '../components/icons';
 
 export default function Home() {
     return (
@@ -23,17 +24,7 @@ export default function Home() {
                             <p className="text-lg mt-2">
                                 Descripción de Carloxz sus habilidades y experiencia.
                             </p>
-                            <div className="flex justify-center gap-4 mt-4">
-                                <a href="https://instagram.com/carlos_instagram" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/instagram.svg" alt="Instagram" className="h-8 w-8" />
-                                </a>
-                                <a href="https://linkedin.com/in/carlos_linkedin" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/linkedin.svg" alt="LinkedIn" className="h-8 w-8" />
-                                </a>
-                                <a href="https://github.com/carlos_github" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/github.svg" alt="GitHub" className="h-8 w-8" />
-                                </a>
-                            </div>
+                            <Icons person="Carlos" />
                         </div>
                         <div className="w-full md:w-1/2 lg:w-1/3 text-center">
                             <img
@@ -45,17 +36,7 @@ export default function Home() {
                             <p className="text-lg mt-2">
                                 Descripción sobre Emmanuel, sus habilidades y experiencia.
                             </p>
-                            <div className="flex justify-center gap-4 mt-4">
-                                <a href="https://instagram.com/emmanuel_instagram" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/instagram.svg" alt="Instagram" className="h-8 w-8" />
-                                </a>
-                                <a href="https://linkedin.com/in/emmanuel_linkedin" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/linkedin.svg" alt="LinkedIn" className="h-8 w-8" />
-                                </a>
-                                <a href="https://github.com/emmanuel_github" target="_blank" rel="noopener noreferrer">
-                                    <img src="/icons/github.svg" alt="GitHub" className="h-8 w-8" />
-                                </a>
-                            </div>
+                            <Icons person="Emmanuel" />
                         </div>
                     </div>
                 </div>

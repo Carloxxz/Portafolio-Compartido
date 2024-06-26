@@ -3,8 +3,8 @@ import SidebarItem from "./SidebarItem";
 export default function Sidebar() {
     return (
         <>
-            <nav className="hidden md:block flex-col bg-gradient-to-b from-indigo-950 to-indigo-800 min-h-screen max-w-60 m-3 rounded-xl">
-                <div className="">
+            <nav className="hidden md:block sticky">
+                <div className="bg-gradient-to-b from-indigo-950 to-indigo-800 m-2 rounded-xl h-[98vh] w-64">
                     <header className="p-5 items-center">
                         <h1 className="text-gray-200 text-4xl mb-3">
                             Vista de <span className="text-indigo-300">Proyectos</span>

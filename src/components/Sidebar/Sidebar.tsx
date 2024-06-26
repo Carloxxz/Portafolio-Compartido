@@ -3,7 +3,7 @@ import SidebarItem from "./SidebarItem";
 export default function Sidebar() {
     return (
         <>
-            <nav className="hidden md:block sticky">
+            <nav className="hidden md:block fixed">
                 <div className="bg-gradient-to-b from-indigo-950 to-indigo-800 m-2 rounded-xl h-[98vh] w-64">
                     <header className="p-5 items-center">
                         <h1 className="text-gray-200 text-4xl mb-3">

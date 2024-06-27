@@ -11,9 +11,14 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: {opacity: 1}
+        }
       },
       animation: {
         scroll: 'scroll 20s linear infinite',
+        fadeIn: 'fadeIn .5s ease-in-out'
       },
     },
   },

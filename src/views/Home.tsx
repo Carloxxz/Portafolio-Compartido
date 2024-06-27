@@ -1,9 +1,17 @@
+import { useEffect, useState } from 'react';
 import SliderTech from '../components/home/SliderTech';
 import Icons from '../components/home/icons';
 
 export default function Home() {
+
+    const [animte, setAnimate] = useState(false)
+
+    useEffect(() => {
+        setAnimate(true)
+    }, [])
+
     return (
-        <div className="w-full flex flex-col">
+        <div className={`${animte ? 'animate-fadeIn' : ''} w-full flex flex-col`}>
             <section>
                 <div className="text-gray-300">
                     <div className="container mx-auto flex flex-col items-center my-12 max-w-screen-xl">
